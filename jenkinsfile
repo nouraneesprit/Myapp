@@ -1,0 +1,17 @@
+pipeline {
+  agent any
+    stages {
+        stage('Pull') {
+             steps{
+                script{
+                    checkout([$class: 'GitSCM', branches: [[name: '*/main']],
+                        userRemoteConfigs: [[
+                            credentialsId: 'ac584541-62d4-4ef8-9f81-2eb2c81d4dd5',
+                            url: 'https://github.com/nouraneesprit/Myapp.git']]])
+                }
+            }
+        }
+
+        
+        }
+        }
