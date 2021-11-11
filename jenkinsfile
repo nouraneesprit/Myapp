@@ -15,7 +15,7 @@ pipeline {
 	stage ('build') {
 		steps{
 		   script{
-			sh "ansible-playbook playbook.yml -i inventory.ini --user=ubuntu --extra-vars "ansible_sudo_pass=nourane""
+			sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml --user=ubuntu --extra-vars "ansible_sudo_pass=nourane""
 			 }
 	             }
 		}
