@@ -15,7 +15,7 @@ pipeline {
 	stage ('build') {
 		steps{
 		   script{
-			sh "ansible-playbook -i ansible/inventory/host.yml  ansible/build.yml --ask-become-pass "
+			sh "ansible-playbook playbook.yml -i inventory.ini --user=ansible \ --extra-vars "ansible_sudo_pass=nourane""
 			 }
 	             }
 		}
