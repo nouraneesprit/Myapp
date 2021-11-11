@@ -12,13 +12,7 @@ pipeline {
             }
         }
 
-	stage ('build') {
-		steps{
-		   script{
-			sh "ansible-playbook -i ansible/inventory/host.yml ansible/build.yml "
-			 }
-	             }
-		}
+	
         
         stage('docker') {
                 steps{
