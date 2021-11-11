@@ -2,13 +2,7 @@
 
 - hosts: localhost
   gather_facts: true
-<<<<<<< HEAD
   become: true
   roles:
     - { role: docker }
-=======
-  become: false
-  roles:
-    - { role: docker }
 
->>>>>>> 8101c8beebd5a8a1f870bf8e085b03ad31bacf17
