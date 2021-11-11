@@ -12,13 +12,20 @@ pipeline {
             }
         }
 
+<<<<<<< HEAD
 	stage ('docker') {
 		steps{
 		   script{
 			sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml  "
+=======
+        
+        stage('docker') {
+                steps{
+		   script{
+			sh "ansible-playbook -i ansible/inventory/host.yml ansible/docker.yml "
+>>>>>>> 8101c8beebd5a8a1f870bf8e085b03ad31bacf17
 			 }
 	             }
 		}
-        
         }
         }
