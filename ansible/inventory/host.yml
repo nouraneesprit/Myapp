@@ -1,8 +1,8 @@
 localhost ansible_connection=local
 
 [Server]
-localhost
+localhost  ansible_user=nourane  ansible_become_pass=nourane
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= ubuntu
+ansi_user= nourane
