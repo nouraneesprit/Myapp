@@ -7,7 +7,7 @@
        build:
           path: /var/lib/jenkins/workspace/pipeline
           pull: no
-          source: build
+        source: build
         state: present
         force_source: true
     - name: run container docker
@@ -15,6 +15,6 @@
        name: myapp_container
        image: devops:latest
        state: started
-        recreate: true
-        ports: 
+       recreate: true
+       ports: 
          - "4200:80"
