@@ -1,7 +1,7 @@
 localhost ansible_connection=local
 
 [Server]
-localhost  ansible_user=nourane  ansible_become_pass=nourane
+localhost  export ANSIBLE_ASK_SUDO_PASS=true ansible_user=nourane  ansible_become_pass=nourane
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
