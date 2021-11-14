@@ -12,7 +12,7 @@ pipeline {
             }
         }
 
-<<<<<<< HEAD
+
      stage('install') {
              steps{
                 script{
@@ -47,7 +47,7 @@ pipeline {
         
    
         
-=======
+
 
 	stage ('docker') {
 		steps{
@@ -63,7 +63,7 @@ pipeline {
 }
 }
 }
->>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3
+
         }
         }
 
