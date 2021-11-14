@@ -1,11 +1,8 @@
 localhost ansible_connection=local
 
 [Server]
-<<<<<<< HEAD
+
 localhost    ansible_user=nourane   ansible_become_pass=nourane
-=======
-localhost   ansible_user=nourane  ansible_become_pass=nourane
->>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
