@@ -1,6 +1,5 @@
 ---
 # tasks file for docker-registry
-<<<<<<< HEAD
 - name: Log into DockerHub
   docker_login:
     username: nourane555
@@ -13,19 +12,5 @@
      repository: nourane555/projetcd:1.2
      push: yes
      source: local
-=======
 
-- name: log into Dockerhub
-  docker_login:
-    username: nourane555
-    password: Nourane19
-     
 
-- name: Tag and push to dockerhub
-  community.docker.docker_image:
-     name: devops:latest
-     repository: nourane555/projetcd1.2
-     push: yes
-     source: local
-
->>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3
