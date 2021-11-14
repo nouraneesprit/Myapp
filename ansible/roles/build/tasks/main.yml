@@ -1,5 +1,12 @@
 ---
 # tasks file for build
 
+<<<<<<< HEAD
 - name: build app
   shell: ng build --prod
+=======
+#buildproject
+
+ - name: build app
+   shell: npm run ng build --prod
+>>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3
