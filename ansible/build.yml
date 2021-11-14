@@ -1,19 +1,7 @@
 ---
-<<<<<<< HEAD
     - hosts: localhost
       gather_facts: true
       become: true
       roles:
        - { role: build }
-=======
 
-- hosts: localhost
-  gather_facts: true
-  become: false
-  roles:
-    - { role: build }
-
-
-
-
->>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3

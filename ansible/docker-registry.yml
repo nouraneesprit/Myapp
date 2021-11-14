@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 --- 
      - hosts: localhost
        gather_facts: true
        become: true
        roles: 
         - { role: docker-registry }
-=======
----
 
-- hosts: localhost
-  gather_facts: true
-  become: true
-  become_user: nourane
-  roles:
-    - { role: docker-registry }
->>>>>>> d53dfeccfd158af4924845f13be4b99651c144b3
 
